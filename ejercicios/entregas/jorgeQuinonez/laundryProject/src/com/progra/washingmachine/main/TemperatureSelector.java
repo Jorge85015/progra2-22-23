@@ -2,30 +2,30 @@ package com.progra.washingmachine.main;
 
 public class TemperatureSelector {
 
-    private int _temperature;
-    private final int _maxTemperature = 90;
+    private int temperature;
+    private final int maxTemperature = 90;
 
     public TemperatureSelector() {
-        _temperature = 0;
+        temperature = 0;
     }
 
     public void setTemperature(int temp) {
-        if ((temp >= 0) && (temp <= _maxTemperature))
-            _temperature = temp;
+        if ((temp >= 0) && (temp <= maxTemperature))
+            temperature = temp;
         else
             System.err.println("Error: Temperatura incorrecta");
     }
 
     public int temperature() {
-        return (_temperature);
+        return (temperature);
     }
 
     public int maxTemperature() {
-        return (_maxTemperature);
+        return (maxTemperature);
     }
 
     public int electricalConsumption() {
-        return (_temperature * 30 / 100);
+        return (temperature * 30 / 100);
     }
 
 }
