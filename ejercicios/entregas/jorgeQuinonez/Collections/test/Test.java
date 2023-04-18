@@ -33,3 +33,9 @@ public class Test {
         }
     }
 }
+
+// Toda clase en java hereda de la clase object
+
+// uno de los metodos heredados es:
+
+// - toString()
