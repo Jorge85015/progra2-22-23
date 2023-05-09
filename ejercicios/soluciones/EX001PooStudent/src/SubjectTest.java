@@ -9,6 +9,7 @@ class SubjectTest {
     Student firstStudent;
     Student secondStudent;
     Student thirdStudent;
+
     @BeforeEach
     void setUp() {
         subject = new Subject("Math", 10);
@@ -18,6 +19,7 @@ class SubjectTest {
         thirdStudent = new Student("Jack", "Doe", "123456789", 5);
 
     }
+
     @Test
     void addStudent() {
         subject.addStudent(secondStudent);
@@ -95,14 +97,14 @@ class SubjectTest {
     @Test
     void getWorstStudent() {
 
-            subject.addStudent(firstStudent);
-            subject.addStudent(secondStudent);
-            subject.addStudent(thirdStudent);
+        subject.addStudent(firstStudent);
+        subject.addStudent(secondStudent);
+        subject.addStudent(thirdStudent);
 
-            String expectedStudentId = thirdStudent.getId();
-            String actualStudentId = subject.getWorstStudent().getId();
+        String expectedStudentId = thirdStudent.getId();
+        String actualStudentId = subject.getWorstStudent().getId();
 
-            assertEquals(expectedStudentId, actualStudentId);
+        assertEquals(expectedStudentId, actualStudentId);
     }
 
     @Test

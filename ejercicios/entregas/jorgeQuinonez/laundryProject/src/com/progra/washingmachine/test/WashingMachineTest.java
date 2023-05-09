@@ -1,9 +1,6 @@
 package com.progra.washingmachine.test;
 
-import com.progra.washingmachine.main.WashingMachineMX;
-import com.progra.washingmachine.main.WashingMachineMX1;
-import com.progra.washingmachine.main.WashingMachineMX2;
-import com.progra.washingmachine.main.WashingMachineMX3Deluxe;
+import com.progra.washingmachine.main.*;
 
 public class WashingMachineTest {
     public static void main(String[] args) {
