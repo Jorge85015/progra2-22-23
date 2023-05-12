@@ -34,11 +34,8 @@ public class Inventory implements IInventory {
         }
     }
 
-    public ArrayList<String> showInv() {
-        this.items.forEach((item) -> {
-            System.out.println(item);
-        });
-        return this.items;
+    public void removeItem(int position) {
+        this.items.remove(items.get(position));
     }
 
     /**
